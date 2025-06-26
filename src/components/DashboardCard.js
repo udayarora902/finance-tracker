@@ -1,26 +1,26 @@
-import React from "react";
+import React from 'react';
 
-export const DashboardCard = ({
-  icon,
-  title,
-  value,
-  cardStyle,
-  gradientStyle,
-  styles,
-  onHover,
-  onLeave,
-  isHovered,
+export const DashboardCard = ({ 
+  icon, 
+  title, 
+  value, 
+  cardStyle, 
+  gradientStyle, 
+  styles, 
+  onHover, 
+  onLeave, 
+  isHovered 
 }) => (
-  <div
+  <div 
     style={{
-      ...styles.card,
+      ...styles.card, 
       ...cardStyle,
-      ...(isHovered ? styles.cardHover : {}),
+      ...(isHovered ? styles.cardHover : {})
     }}
     onMouseEnter={onHover}
     onMouseLeave={onLeave}
   >
-    <div style={{ ...styles.cardGradient, ...gradientStyle }}></div>
+    <div style={{...styles.cardGradient, ...gradientStyle}}></div>
     <div style={styles.cardHeader}>
       <span style={styles.cardIcon}>{icon}</span>
       <h3 style={styles.cardTitle}>{title}</h3>
